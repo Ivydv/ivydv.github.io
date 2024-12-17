@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/05669dca13.js" crossorigin="anonymous"></script>
+    <title>Botanis | About me</title>
+</head>
+<body>
+    <header>
+        <i class="fa-brands fa-discord">&nbsp;@botanis_</i>
+    </header>
+    <aside>
+        <ul>
+            <li style="--i:3;" data-icon="&#xf015">
+                <a href="index.html">About me</a>
+            </li>
+            <li style="--i:2;" data-icon="&#xe533">
+                <a href="socials.html">Socials</a>
+            </li>
+            <li style="--i:1;" data-icon="&#x40">
+                <a href="pastnames.html">Past names</a>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <article>
+            <figure class="tvbox">
+                <h4>
+                    <span id="user-1" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> Hello. I'm botanis.</span><br>
+                    <span id="user-2" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> I'm currently studying coding and data analysis.</span><br>
+                    <span id="user-3" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> My goals for the future are pretty straightforward:</span><br>
+                    <span id="user-4" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> I want to become a software engineer by 2028.</span><br><br>
+                    <span id="user-5" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> I've decided to dedicate myself to polishing my Python skills.</span><br>
+                    <span id="user-6" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> I've delved into several programming languages:</span><br>
+                    <span id="user-7" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> Python, JavaScript, Typescript, PHP, C++, HTML, CSS, jQuery, etc.</span><br>
+                    <span id="user-8" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> My current favorites are Python and Java, I really enjoy back-end development.</span><br><br>
+                    <span id="user-9" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> Refer to me via any pronouns.</span><br>
+                    <span id="user-10" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span> Name-wise, just go with Niki. Thanks.</span><br>
+                    <span id="reappearing" style="visibility: hidden;"><span class="user-cmd" style="visibility: hidden;" id="show-too">C:\Users\btns></span><span style="font-style: bold;">I</span></span>
+                </h4>
+                <script type="text/javascript">
+                    let user = [];
+                    for (let i = 0; i < 10; i++) {
+                        user.push(`user-${i + 1}`);
+                    }
+
+                    let currentIndex = 0;
+                    let intervalId;
+
+                    intervalId = setInterval(() => {
+                        if (currentIndex < user.length) {
+                            const userFollow = user[currentIndex];
+                            const element = document.getElementById(userFollow);
+                            if (element) {
+                                element.style.visibility = "visible";
+                            } else {
+                                console.warn(`Element with id "${userFollow}" not found.`);
+                            }
+                            currentIndex++;
+                        } else {
+                            clearInterval(intervalId);
+
+                            // Start the reappearing text interval
+                            const reappearingElement = document.getElementById("reappearing");
+                            if (reappearingElement) {
+                                document.getElementById("show-too").style.visibility = "visible";
+                                reappearingElement.style.visibility = "visible";
+                                setInterval(() => {
+                                    reappearingElement.style.visibility = reappearingElement.style.visibility === "hidden" ? "visible" : "hidden";
+                                }, 2000);
+                            } else {
+                                console.warn("Element with id 'reappearing' not found.");
+                            }
+                        }
+                    }, 250);
+                </script>
+            </figure>
+        </article>
+        <section>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
