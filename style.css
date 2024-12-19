@@ -101,11 +101,6 @@ body {
     background: #2c2e33;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
 }
-.tvbox:hover {
-    background: #1e1f21;
-    transform: skewY(0deg) scale(1.05);
-    transition: 0.5s;
-}
 .tvbox::after {
     content: "";
     position: absolute;
