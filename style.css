@@ -146,3 +146,6 @@ header i {
 .uncaps {
     text-transform: none;
 }
+a {
+    text-decoration: none;
+}
