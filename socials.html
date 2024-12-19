@@ -8,81 +8,113 @@
     <title>Botanis | Socials</title>
 </head>
 <body>
-    <header>
-        <i class="fa-brands fa-discord">&nbsp;@botanis_</i>
-    </header>
-    <aside>
-        <ul>
-            <li style="--i:3;" data-icon="&#xf015">
-                <a href="index.html">About me</a>
-            </li>
-            <li style="--i:2;" data-icon="&#xe533">
-                <a href="socials.html">Socials</a>
-            </li>
-            <li style="--i:1;" data-icon="&#x40">
-                <a href="pastnames.html">Past names</a>
-            </li>
-        </ul>
-    </aside>
-    <main>
-        <article>
-            <figure class="tvbox">
-                <h4>
-                    <span id="user-1" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span>RUNNING <span class="user-cmd">Socials.btns</span></span><br>
-                    <span id="user-2" class="uncaps" style="visibility: hidden;"><span class="user-cmd">Socials.btns:</span>&nbsp;<a href="https://twitch.tv/tenseixx"><i class="fa-brands fa-twitch"></i> Twitch: tenseixx</a></span><br>
-                    <span id="user-3" class="uncaps" style="visibility: hidden;"><span class="user-cmd">Socials.btns:</span>&nbsp;<a href="https://spotify.com"><i class="fa-brands fa-spotify"></i> Spotify: PolariS</a></span><br>
-                    <span id="user-4" class="uncaps" style="visibility: hidden;"><span class="user-cmd">Socials.btns:</span>&nbsp;<a href="https://discord.com"><i class="fa-brands fa-discord"></i> Discord: botanis_</a></span><br>
-                    <span id="user-5" class="uncaps" style="visibility: hidden;"><span class="user-cmd">Socials.btns:</span>&nbsp;Exiting program...</span><br>
-                    <span id="reappearing" style="visibility: hidden;"><span class="user-cmd" style="visibility: hidden;" id="show-too">C:\Users\btns></span><span style="font-style: bold;">I</span></span>
-                    <span id="user-6" style="visibility: hidden;"></span><br>
-                    <span id="user-7" style="visibility: hidden;"></span><br>
-                    <span id="user-8" style="visibility: hidden;"></span><br>
-                    <span id="user-9" style="visibility: hidden;"></span><br>
-                    <span id="user-10" style="visibility: hidden;"></span><br>
-                </h4>
-                <script type="text/javascript">
-                    let user = [];
-                    for (let i = 0; i < 10; i++) {
-                        user.push(`user-${i + 1}`);
-                    }
+<header>
+    <i class="fa-brands fa-discord">&nbsp;@botanis_</i>
+</header>
+<aside>
+    <ul>
+        <li style="--i:3;" data-icon="&#xf015">
+            <a href="index.html">About me</a>
+        </li>
+        <li style="--i:2;" data-icon="&#xe533">
+            <a href="socials.html">Socials</a>
+        </li>
+        <li style="--i:1;" data-icon="&#x40">
+            <a href="pastnames.html">Past names</a>
+        </li>
+    </ul>
+</aside>
+<main>
+    <article>
+        <figure class="tvbox">
+            <h4>
+                <span id="user-1" style="visibility: hidden;"><span class="user-cmd">C:\Users\btns></span>RUNNING <span class="user-cmd">Socials.btns</span></span><br>
+                <span id="user-2" class="uncaps" style="visibility: hidden;"><span class="user-cmd">Socials.btns:</span>&nbsp;<a href="https://twitch.tv/tenseixx"><i class="fa-brands fa-twitch"></i> Twitch: tenseixx</a></span><br>
+                <span id="user-3" class="uncaps" style="visibility: hidden;"><span class="user-cmd">Socials.btns:</span>&nbsp;<a href="https://spotify.com"><i class="fa-brands fa-spotify"></i> Spotify: PolariS</a></span><br>
+                <span id="user-4" class="uncaps" style="visibility: hidden;"><span class="user-cmd">Socials.btns:</span>&nbsp;<a href="https://discord.com"><i class="fa-brands fa-discord"></i> Discord: botanis_</a></span><br>
+                <span id="user-5" class="uncaps" style="visibility: hidden;"><span class="user-cmd">Socials.btns:</span>&nbsp;Exiting program...</span><br>
+                <span id="reappearing" style="visibility: hidden;"><span class="user-cmd" style="visibility: hidden;" id="show-too">C:\Users\btns></span><span><input id="input-val" type="text" value="I"></span></span>
+                <span id="user-6" style="visibility: hidden; display: block;"></span><br>
+                <span id="user-7" style="visibility: hidden;"></span><br>
+                <span id="user-8" style="visibility: hidden;"></span><br>
+                <span id="user-9" style="visibility: hidden;"></span><br>
+                <span id="user-10" style="visibility: hidden;"></span><br>
+            </h4>
+            <script type="text/javascript">
+                let user = [];
+                for (let i = 0; i < 10; i++) {
+                    user.push(`user-${i + 1}`);
+                }
 
-                    let currentIndex = 0;
-                    let intervalId;
+                let currentIndex = 0;
+                let intervalId;
 
-                    intervalId = setInterval(() => {
-                        if (currentIndex < user.length) {
-                            const userFollow = user[currentIndex];
-                            const element = document.getElementById(userFollow);
-                            if (element) {
-                                element.style.visibility = "visible";
-                            } else {
-                                console.warn(`Element with id "${userFollow}" not found.`);
-                            }
-                            currentIndex++;
+                intervalId = setInterval(() => {
+                    if (currentIndex < user.length) {
+                        const userFollow = user[currentIndex];
+                        const element = document.getElementById(userFollow);
+                        if (element) {
+                            element.style.visibility = "visible";
                         } else {
-                            clearInterval(intervalId);
-
-                            const reappearingElement = document.getElementById("reappearing");
-                            if (reappearingElement) {
-                                document.getElementById("show-too").style.visibility = "visible";
-                                reappearingElement.style.visibility = "visible";
-                                setInterval(() => {
-                                    reappearingElement.style.visibility = reappearingElement.style.visibility === "hidden" ? "visible" : "hidden";
-                                }, 2000);
-                            } else {
-                                console.warn("Element with id 'reappearing' not found.");
-                            }
+                            console.warn(`Element with id "${userFollow}" not found.`);
                         }
-                    }, 250);
-                </script>
-            </figure>
-        </article>
-        <section>
+                        currentIndex++;
+                    } else {
+                        clearInterval(intervalId);
 
-        </section>
-    </main>
-    <footer>
-        <p style="visibility: hidden">Botanis 2024</p>
-    </footer>
+                        const reappearingElement = document.getElementById("reappearing");
+                        if (reappearingElement) {
+                            document.getElementById("show-too").style.visibility = "visible";
+                            reappearingElement.style.visibility = "visible";
+
+                            const inputElement = reappearingElement.querySelector('input');
+                            if (inputElement) {
+                                let defaultValues = ["I", " "];
+                                let interval = setInterval(() => {
+                                    if (defaultValues.includes(inputElement.value)) {
+                                        inputElement.value = inputElement.value === "I" ? " " : "I";
+                                    }
+                                }, 500);
+
+                                inputElement.addEventListener("focus", () => {
+                                    clearInterval(interval);
+                                });
+
+                                inputElement.addEventListener("blur", () => {
+                                    if (defaultValues.includes(inputElement.value)) {
+                                        interval = setInterval(() => {
+                                            inputElement.value = inputElement.value === "I" ? " " : "I";
+                                        }, 500);
+                                    }
+                                });
+                                inputElement.addEventListener("keypress", (event) => {
+                                    if (document.activeElement === inputElement && event.key === "Enter") {
+                                        console.log("Input pressed, value: " + document.getElementById("input-val").value);
+                                        if (document.getElementById("input-val").value === "KYS") {
+                                            clearInterval(interval);
+                                            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                                        }
+                                        else {
+                                            document.getElementById("user-6").textContent = "Unknown command.";
+                                        }
+                                    }
+                                });
+                            }
+                        } else {
+                            console.warn("Element with id 'reappearing' not found.");
+                        }
+                    }
+                }, 250);
+
+            </script>
+        </figure>
+    </article>
+    <section>
+
+    </section>
+</main>
+<footer>
+    <p style="visibility: hidden">Botanis 2024</p>
+</footer>
 </body>
 </html>

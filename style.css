@@ -73,7 +73,6 @@ aside {
 body {
     background: #2c2e33;
 }
-
 .tvbox::before {
     font-family: "FontAwesome";
     color: #999;
@@ -150,4 +149,16 @@ header i {
 a {
     text-decoration: none;
     color: #17722e;
+}
+input {
+    border: none;
+    color: #17722e;
+    background: #2c2e33;
+    font-family: "FontAwesome";
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+input:focus {
+    border: none;
+    outline: none;
 }
