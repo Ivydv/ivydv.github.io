@@ -122,6 +122,10 @@ body {
     line-height: 1.25em;
 }
 
+span {
+    font-size: 0.7vw;
+}
+
 header {
     background: #2c2e33;
     display: block;
