@@ -41,6 +41,40 @@
                     <span id="user-10" style="visibility: hidden;"></span><br>
                 </h4>
             </figure>
+            <script type="text/javascript">
+                    let user = [];
+                    for (let i = 0; i < 10; i++) {
+                        user.push(`user-${i + 1}`);
+                    }
+
+                    let currentIndex = 0;
+                    let intervalId;
+
+                    intervalId = setInterval(() => {
+                        if (currentIndex < user.length) {
+                            const userFollow = user[currentIndex];
+                            const element = document.getElementById(userFollow);
+                            if (element) {
+                                element.style.visibility = "visible";
+                            } else {
+                                console.warn(`Element with id "${userFollow}" not found.`);
+                            }
+                            currentIndex++;
+                        } else {
+                            clearInterval(intervalId);
+                            const reappearingElement = document.getElementById("reappearing");
+                            if (reappearingElement) {
+                                document.getElementById("show-too").style.visibility = "visible";
+                                reappearingElement.style.visibility = "visible";
+                                setInterval(() => {
+                                    reappearingElement.style.visibility = reappearingElement.style.visibility === "hidden" ? "visible" : "hidden";
+                                }, 2000);
+                            } else {
+                                console.warn("Element with id 'reappearing' not found.");
+                            }
+                        }
+                    }, 250);
+                </script>
         </article>
         <section>
 
