@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pulsions Portfolio</title>
-  <meta name="description" content="A clean, modern, and accessible developer portfolio template.">
+  <title>Mikołaj Chrzczon – Junior Python Developer</title>
+  <meta name="description" content="Portfolio of Mikołaj Chrzczon, a junior Python developer and first-year student at WSB Merito University in Gdańsk, looking for an IT internship.">
+  <meta property="og:title" content="Mikołaj Chrzczon – Junior Python Developer">
+  <meta property="og:description" content="Python desktop apps, Roblox game development and web projects. Open to IT internships.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ivydv.github.io/">
   
   <!-- Font Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +25,12 @@
   <header class="header">
     <div class="container nav-container">
       <a href="#" class="logo">
-        pulsions<span>.is-a.dev</span>
+        ivydv<span>.github.io</span>
       </a>
 
       <nav class="nav-menu" id="nav-menu">
         <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#contact" class="nav-link">Contact</a>
@@ -55,10 +60,14 @@
         </div>
         <h1 class="hero-title">Welcome.</h1>
         <p class="hero-description">
-          Hi, I'm Mikołaj. I'm a first-year university student looking to gain my first real work experience in the IT field.
+          Hi, I'm Mikołaj, a junior Python developer and first-year student at WSB Merito University in Gdańsk. I'm looking for an IT internship where I can put my Python and game development skills to work.
         </p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary">View Projects &rarr;</a>
+          <a href="assets/Mikolaj_Chrzczon_CV.pdf" class="btn btn-outline" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
           <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
       </div>
@@ -102,6 +111,14 @@
               <div class="stat-number">1</div>
               <div class="stat-label">Commercial Project Completed/Sold</div>
             </div>
+            <div class="stat-card">
+              <div class="stat-number">23.5k+</div>
+              <div class="stat-label">Visits on Roblox Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">C2</div>
+              <div class="stat-label">English Level</div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,6 +133,52 @@
     </section>
 
     <!-- ==========================================================================
+       EXPERIENCE SECTION
+       ========================================================================== -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Paid work so far</p>
+
+        <div class="experience-list">
+          <article class="exp-card">
+            <div class="exp-head">
+              <div>
+                <h3 class="exp-title">Freelance Python Developer</h3>
+                <p class="exp-org">Client project for a local business · Mława</p>
+              </div>
+              <span class="badge exp-date">2025</span>
+            </div>
+            <ul class="exp-points">
+              <li>Designed, built and sold a desktop app that lets staff log documents and flags upcoming deadlines.</li>
+              <li>Built the interface in Tkinter and CustomTkinter, using Pillow for image handling and an SQL database for storage.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="badge">Python</span>
+              <span class="badge">Tkinter</span>
+              <span class="badge">CustomTkinter</span>
+              <span class="badge">Pillow</span>
+              <span class="badge">SQL</span>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-head">
+              <div>
+                <h3 class="exp-title">Renovation Worker</h3>
+                <p class="exp-org">Corten Dental (dental clinic)</p>
+              </div>
+              <span class="badge exp-date">2026</span>
+            </div>
+            <ul class="exp-points">
+              <li>Renovated a Corten Dental franchise location.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
        PROJECTS SECTION
        ========================================================================== -->
     <section id="projects" class="projects">
@@ -126,16 +189,19 @@
         <div class="projects-grid">
           <!-- Project Card 1 -->
           <article class="project-card">
-            <div class="project-image">
-              <span>[ No Image Available ]</span>
+            <div class="project-image project-image--graphic" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><polyline points="9 15 11 17 15 13"></polyline></svg>
+              <span class="project-image-label">Client project · sold</span>
             </div>
             <div class="project-body">
-              <h3 class="project-title">Python Receipt Manager</h3>
-              <p class="project-description">Analytical tool used to store and process receipts for businesses. Unfortunately, it has been lost to disk corruption.</p>
+              <h3 class="project-title">Document Deadline Tracker</h3>
+              <p class="project-description">Desktop app I built for, and sold to, a local business. Staff log their documents and the app flags upcoming deadlines so nothing slips through.</p>
               <div class="project-tags">
                 <span class="badge">Python</span>
                 <span class="badge">SQL</span>
                 <span class="badge">Tkinter</span>
+                <span class="badge">CustomTkinter</span>
+                <span class="badge">Pillow</span>
                 <span class="badge">AI Assistance</span>
               </div>
             </div>
@@ -144,19 +210,41 @@
           <!-- Project Card 2 -->
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/kf1lb1.png" alt="[ Project Image ]">
+              <img src="assets/kf1lb1.png" alt="Overhead view of a Roblox lobby map: a park surrounded by colourful buildings">
             </div>
             <div class="project-body">
-              <h3 class="project-title">Roblox Projects</h3>
-              <p class="project-description">I've dived into Roblox game development, which is also what I currently do.</p>
+              <h3 class="project-title">Roblox Game Development</h3>
+              <p class="project-description">Scripting gameplay, designing UI and building maps for Roblox projects with over 23,500 total visits. It's what I'm working on right now.</p>
               <div class="project-tags">
-                <span class="badge">LUA</span>
+                <span class="badge">Lua</span>
+                <span class="badge">Roblox Studio</span>
                 <span class="badge">Scripting</span>
                 <span class="badge">UI Design</span>
                 <span class="badge">Map Building</span>
               </div>
               <div class="project-links">
                 <a href="https://create.roblox.com/talent/creators/292145886" target="_blank" rel="noopener">My Talent Hub Profile &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card">
+            <div class="project-image project-image--graphic" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span class="project-image-label">You're looking at it</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-description">Designed and published this site: a responsive layout with a light and dark theme, hosted on GitHub Pages.</p>
+              <div class="project-tags">
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">GitHub Pages</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Ivydv/ivydv.github.io" target="_blank" rel="noopener">Source on GitHub &rarr;</a>
               </div>
             </div>
           </article>
@@ -185,22 +273,35 @@
 
           <!-- Skill Category 2 -->
           <div class="skill-category">
-            <h3 class="skill-category-title">Backend</h3>
+            <h3 class="skill-category-title">Backend &amp; Desktop</h3>
             <div class="skill-tags">
-              <span class="skill-pill">Node.js</span>
               <span class="skill-pill">Python</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Tkinter / CustomTkinter</span>
+              <span class="skill-pill">Pillow</span>
               <span class="skill-pill">MariaDB</span>
               <span class="skill-pill">SQLite</span>
-              <span class="skill-pill">Java</span>
             </div>
           </div>
 
           <!-- Skill Category 3 -->
           <div class="skill-category">
+            <h3 class="skill-category-title">Game Development</h3>
+            <div class="skill-tags">
+              <span class="skill-pill">Lua</span>
+              <span class="skill-pill">Roblox Studio</span>
+              <span class="skill-pill">Scripting</span>
+              <span class="skill-pill">UI Design</span>
+              <span class="skill-pill">Map Building</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 4 -->
+          <div class="skill-category">
             <h3 class="skill-category-title">Tools & Practice</h3>
             <div class="skill-tags">
               <span class="skill-pill">Git / GitHub</span>
-              <span class="skill-pill">MS365</span>
+              <span class="skill-pill">Microsoft 365</span>
               <span class="skill-pill">Linux</span>
               <span class="skill-pill">CI/CD</span>
               <span class="skill-pill">Prompt Design (AI)</span>
@@ -228,13 +329,17 @@
         <div class="contact-grid">
           <div class="contact-info">
             <p>
-              I am currently open to new career opportunities, freelance projects, or technical inquiries. Feel free to reach out through the form or direct channels.
+              I am currently open to internships, new career opportunities, freelance projects, or technical inquiries. Feel free to reach out by email or on LinkedIn.
             </p>
-            
+
             <div class="contact-links">
               <div class="contact-item">
                 <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <span>sopulsions@proton.me</span>
+                <a href="mailto:sopulsions@proton.me">sopulsions@proton.me</a>
+              </div>
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <a href="https://www.linkedin.com/in/miko%C5%82aj-chrzczon-848729346/" target="_blank" rel="noopener">LinkedIn profile</a>
               </div>
               <div class="contact-item">
                 <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -245,6 +350,16 @@
                 <a href="https://github.com/Ivydv" target="_blank" rel="noopener">github.com/ivydv</a>
               </div>
             </div>
+          </div>
+
+          <div class="cv-card">
+            <svg class="cv-card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="13" y2="17"></line></svg>
+            <h3 class="cv-card-title">Want the short version?</h3>
+            <p class="cv-card-text">My experience, projects and skills on one page.</p>
+            <a href="assets/Mikolaj_Chrzczon_CV.pdf" class="btn btn-primary" download>
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download CV (PDF)
+            </a>
           </div>
         </div>
 
